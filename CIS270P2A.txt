@@ -1,0 +1,41 @@
+     A                                      INDARA
+     A          R HEADING                   SKIPB(1)
+     A                                     2DATE(*JOB)
+     A                                      EDTWRD('  /  /  ')
+     A                                    52'GTC Telephone Company'
+     A                                   117'Page'
+     A                                   123PAGNBR
+     A                                      EDTCDE(Z)
+     A                                      SPACEA(1)
+     A                                    40'Payment Processing Transaction Aud-
+     A                                      it Report'
+     A                                        SPACEA(1)
+     A                                    50'by: Steven Conyers'
+     A                                       SPACEA(1)
+     A                                    20'Customer'
+     A                                      SPACEB(1)
+     A                                    38'Date Received'
+     A                                    64'Amount'
+     A                                      SPACEA(1)
+     A          R DETAIL
+     A            AMTPD     R             61REFFLD(PAYREC/AMTPD RPGIV_5THS/GTCP-
+     A                                      AYP)
+     A                                      EDTCDE(1 $)
+     A            CPHONE    R             20REFFLD(PAYREC/CPHONE RPGIV_5THS/GTC-
+     A                                      PAYP)
+     A            DATRCV    R             39REFFLD(PAYREC/DATRCV RPGIV_5THS/GTC-
+     A                                      PAYP)
+     A            NOCUS         34        80
+     A                                      SPACEA(2)
+     A          R ERROR                     SPACEB(1)
+     A            INVALCUS       3  0     74
+     A                                    80'*** Customers Not Found in Master -
+     A                                      File ***'
+     A*%%RS+<record-sequences>
+     A*%%RS+ <sequence name="Untitled">
+     A*%%RS+  <device type="printer" width="132" height="66" />
+     A*%%RS+  <record-write record-format="HEADING" />
+     A*%%RS+  <record-write record-format="DETAIL" />
+     A*%%RS+  <record-write record-format="ERROR" />
+     A*%%RS+ </sequence>
+     A*%%RS </record-sequences> 
