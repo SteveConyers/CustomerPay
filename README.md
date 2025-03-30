@@ -9,4 +9,4 @@ Learned:
 1. Copy and rename file from one location to a different using 5250 command line.
 2. Change legacy date to native date and vice versa.
 
-PS: Programes needed to create code and compile either IBM RDi or 5250 Emulator.
+PS: Programs needed to create code and compile either IBM RDi or VS code, then a 5250 Emulator to run the program.
